@@ -1,0 +1,133 @@
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: null
+  labels:
+    env: dev
+    team: jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: dev
+  namespace: jx
+spec:
+  kind: Development
+  label: Development
+  namespace: jx
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source:
+    ref: master
+    url: https://github.com/myriad-personal/env-jx3-openshift3.git
+  teamSettings:
+    appsRepository: http://chartmuseum.jenkins-x.io
+    bootRequirements: |
+      autoUpdate:
+        enabled: false
+        schedule: ""
+      bootConfigURL: https://github.com/jenkins-x/jx3-boot-config
+      buildPacks:
+        buildPackLibrary:
+          gitRef: master
+          gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+      cluster:
+        chartRepository: http://bucketrepo/bucketrepo/charts
+        clusterName: jx3-openshift3
+        devEnvApprovers:
+        - troyhart
+        - jasonholmberg
+        - svanderveen777
+        - larrys
+        - nathan-j-taylor
+        environmentGitOwner: myriad-svc-github-jenkins
+        gitKind: github
+        gitName: github
+        gitServer: https://github.com
+        namespace: jx
+        provider: openshift
+        registry: docker-registry.default.svc.cluster.local:5000
+      environments:
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: dev
+        owner: myriad-personal
+        repository: env-jx3-openshift3
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: staging
+      - ingress:
+          domain: ""
+          externalDNS: false
+          namespaceSubDomain: ""
+          tls:
+            email: ""
+            enabled: false
+            production: false
+        key: production
+      gitops: true
+      ingress:
+        domain: apps.os.swe-test.aws.myriad.com
+        externalDNS: false
+        namespaceSubDomain: -jx.
+        tls:
+          email: ""
+          enabled: false
+          production: false
+      kaniko: true
+      pipelineUser:
+        username: myriad-svc-github-jenkins
+      repository: bucketrepo
+      secretStorage: local
+      storage:
+        backup:
+          enabled: false
+          url: ""
+        logs:
+          enabled: false
+          url: ""
+        reports:
+          enabled: false
+          url: ""
+        repository:
+          enabled: false
+          url: ""
+      vault: {}
+      velero:
+        schedule: ""
+        ttl: ""
+      versionStream:
+        ref: master
+        url: https://github.com/jenkins-x/jxr-versions.git
+      webhook: lighthouse
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x/jx3-pipeline-catalog.git
+    defaultScheduler:
+      apiVersion: jenkins.io/v1
+      kind: Scheduler
+      name: jx-meta-pipeline
+    envOrganisation: myriad-svc-github-jenkins
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: openshift
+    pipelineUserEmail: jenkins-x@googlegroups.com
+    pipelineUsername: myriad-svc-github-jenkins
+    promotionEngine: Prow
+    prowConfig: Scheduler
+    prowEngine: Tekton
+    useGitOps: true
+    versionStreamRef: master
+    versionStreamUrl: https://github.com/jenkins-x/jxr-versions.git
+  webHookEngine: Lighthouse
+status: {}
