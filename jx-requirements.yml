@@ -8,17 +8,21 @@ buildPacks:
     gitURL: https://github.com/jenkins-x/jx3-pipeline-catalog.git
 cluster:
   chartRepository: http://bucketrepo/bucketrepo/charts
-  clusterName: todo
+  clusterName: jx3-openshift3
   devEnvApprovers:
-  - todo
-  environmentGitOwner: "todo"
+  - troyhart
+  - jasonholmberg
+  - svanderveen777
+  - larrys
+  - nathan-j-taylor
+  environmentGitOwner: myriad-svc-github-jenkins
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
   project:  ""
   provider: openshift
-  registry: "ghcr.io"
+  registry: docker-registry.default.svc.cluster.local:5000
   zone: ""
 environments:
 - key: dev
@@ -32,7 +36,7 @@ environments:
   repository: ""
 gitops: true
 ingress:
-  domain: ""
+  domain: apps.os.swe-test.aws.myriad.com
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
