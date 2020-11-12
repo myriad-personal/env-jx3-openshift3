@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - myriad-personal/jx3-demoapp1
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - myriad-personal/jx3-springdemo1
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -30,6 +34,22 @@ data:
     plugins:
       myriad-personal/env-jx3-openshift3:
       - config-updater
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      myriad-personal/jx3-demoapp1:
       - approve
       - assign
       - blunderbuss
@@ -88,6 +108,9 @@ data:
     triggers:
     - repos:
       - myriad-personal/env-jx3-openshift3
+      trusted_org: todo
+    - repos:
+      - myriad-personal/jx3-demoapp1
       trusted_org: todo
     - repos:
       - myriad-personal/jx3-springdemo1
