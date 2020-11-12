@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         myriad-personal/env-jx3-openshift3: true
+        myriad-personal/jx3-demoapp1: true
         myriad-personal/jx3-springdemo1: true
         myriad-personal/jx3-springdemo2: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         myriad-personal/env-jx3-openshift3: merge
+        myriad-personal/jx3-demoapp1: merge
         myriad-personal/jx3-springdemo1: merge
         myriad-personal/jx3-springdemo2: merge
       queries:
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - myriad-personal/env-jx3-openshift3
+        - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-springdemo1
         - myriad-personal/jx3-springdemo2
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - myriad-personal/env-jx3-openshift3
+        - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-springdemo1
         - myriad-personal/jx3-springdemo2
       target_url: http://dashboard-jx.apps.os.swe-test.aws.myriad.com
