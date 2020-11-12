@@ -9,6 +9,7 @@ data:
       enabled:
         myriad-personal/env-jx3-openshift3: true
         myriad-personal/jx3-springdemo1: true
+        myriad-personal/jx3-springdemo2: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -22,6 +23,7 @@ data:
       merge_method:
         myriad-personal/env-jx3-openshift3: merge
         myriad-personal/jx3-springdemo1: merge
+        myriad-personal/jx3-springdemo2: merge
       queries:
       - labels:
         - approved
@@ -34,6 +36,7 @@ data:
         repos:
         - myriad-personal/env-jx3-openshift3
         - myriad-personal/jx3-springdemo1
+        - myriad-personal/jx3-springdemo2
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - myriad-personal/env-jx3-openshift3
         - myriad-personal/jx3-springdemo1
+        - myriad-personal/jx3-springdemo2
       target_url: http://dashboard-jx.apps.os.swe-test.aws.myriad.com
 kind: ConfigMap
 metadata:
