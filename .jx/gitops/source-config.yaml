@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-demoapp1
+    - name: jx3-demoapp2
     - name: jx3-springdemo1
     - name: jx3-springdemo2
     scheduler: in-repo
