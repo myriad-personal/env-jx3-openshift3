@@ -22,7 +22,7 @@ jxRequirements:
     gitServer: https://github.com
     namespace: jx
     provider: openshift
-    registry: docker-registry.default.svc.cluster.local:5000
+    registry: image-registry.openshift-image-registry.svc:5000
   environments:
   - ingress:
       domain: ""

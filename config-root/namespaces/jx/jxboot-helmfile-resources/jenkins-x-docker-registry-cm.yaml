@@ -10,4 +10,4 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 data:
   kaniko.flags: ""
-  docker.registry: docker-registry.default.svc.cluster.local:5000
+  docker.registry: image-registry.openshift-image-registry.svc:5000
