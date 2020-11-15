@@ -11,6 +11,7 @@ data:
         myriad-personal/jx3-demoapp1: true
         myriad-personal/jx3-demoapp2: true
         myriad-personal/jx3-demoapp4: true
+        myriad-personal/jx3-demoapp5: true
         myriad-personal/jx3-springdemo1: true
         myriad-personal/jx3-springdemo2: true
     plank: {}
@@ -28,6 +29,7 @@ data:
         myriad-personal/jx3-demoapp1: merge
         myriad-personal/jx3-demoapp2: merge
         myriad-personal/jx3-demoapp4: merge
+        myriad-personal/jx3-demoapp5: merge
         myriad-personal/jx3-springdemo1: merge
         myriad-personal/jx3-springdemo2: merge
       queries:
@@ -44,6 +46,7 @@ data:
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp2
         - myriad-personal/jx3-demoapp4
+        - myriad-personal/jx3-demoapp5
         - myriad-personal/jx3-springdemo1
         - myriad-personal/jx3-springdemo2
       - labels:
@@ -59,6 +62,7 @@ data:
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp2
         - myriad-personal/jx3-demoapp4
+        - myriad-personal/jx3-demoapp5
         - myriad-personal/jx3-springdemo1
         - myriad-personal/jx3-springdemo2
       target_url: http://dashboard-jx.apps.os.swe-test.aws.myriad.com
