@@ -20,6 +20,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - myriad-personal/jx3-demoapp5
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - myriad-personal/jx3-springdemo1
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -105,6 +109,22 @@ data:
       - cat
       - dog
       - pony
+      myriad-personal/jx3-demoapp5:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       myriad-personal/jx3-springdemo1:
       - approve
       - assign
@@ -157,6 +177,9 @@ data:
       trusted_org: todo
     - repos:
       - myriad-personal/jx3-demoapp4
+      trusted_org: todo
+    - repos:
+      - myriad-personal/jx3-demoapp5
       trusted_org: todo
     - repos:
       - myriad-personal/jx3-springdemo1
