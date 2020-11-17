@@ -21,6 +21,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: openshift
+  dockerRegistryOrg: jx
   registry: image-registry.openshift-image-registry.svc:5000
 environments:
 - ingress:
