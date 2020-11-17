@@ -15,13 +15,13 @@ cluster:
   - svanderveen777
   - larrys
   - nathan-j-taylor
+  dockerRegistryOrg: jx
   environmentGitOwner: myriad-svc-github-jenkins
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
   provider: openshift
-  dockerRegistryOrg: jx
   registry: image-registry.openshift-image-registry.svc:5000
 environments:
 - ingress:

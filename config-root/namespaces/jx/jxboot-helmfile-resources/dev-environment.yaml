@@ -38,6 +38,7 @@ spec:
         - svanderveen777
         - larrys
         - nathan-j-taylor
+        dockerRegistryOrg: jx
         environmentGitOwner: myriad-svc-github-jenkins
         gitKind: github
         gitName: github
@@ -116,6 +117,7 @@ spec:
       apiVersion: jenkins.io/v1
       kind: Scheduler
       name: jx-meta-pipeline
+    dockerRegistryOrg: jx
     envOrganisation: myriad-svc-github-jenkins
     gitServer: https://github.com
     helmTemplate: true
