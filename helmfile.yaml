@@ -33,7 +33,7 @@ releases:
   values:
   - versionStream/charts/jx3/jenkins-x-crds/values.yaml.gotmpl
 - chart: cdf/tekton-pipeline
-  version: 0.17.3
+  version: 0.18.0-1
   name: tekton-pipeline
   namespace: tekton-pipelines
   values:
@@ -66,5 +66,9 @@ releases:
   namespace: jx
   values:
   - versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
+- chart: jx3/local-external-secrets
+  version: 0.0.6
+  name: local-external-secrets
+  namespace: jx
 templates: {}
 missingFileHandler: ""
