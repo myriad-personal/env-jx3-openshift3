@@ -16,6 +16,7 @@ jxRequirements:
     - svanderveen777
     - larrys
     - nathan-j-taylor
+    dockerRegistryOrg: jx
     environmentGitOwner: myriad-svc-github-jenkins
     gitKind: github
     gitName: github
