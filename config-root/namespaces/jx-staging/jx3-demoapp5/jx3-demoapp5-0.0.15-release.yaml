@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-24T23:11:47Z"
+  creationTimestamp: "2020-11-25T16:04:49Z"
   deletionTimestamp: null
-  name: 'jx3-demoapp5-0.0.14'
+  name: 'jx3-demoapp5-0.0.15'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.14
-      sha: 93981dde6c884f93f06cdeb941911d1c79f32776
+        release 0.0.15
+      sha: 4d38dfc8cfef7f2bb70bb460b0b02770457967c2
     - author:
         accountReference:
           - id: troy-hart-0
@@ -40,45 +40,13 @@ spec:
         email: thart@myriad.com
         name: Troy Hart
       message: |
-        ...
-      sha: c4747e29aa7dfd75b09b7729b52f106ba9e19832
-    - author:
-        accountReference:
-          - id: troy-hart-0
-            provider: jenkins.io/git-github-userid
-        email: thart@myriad.com
-        name: Troy Hart
-      branch: master
-      committer:
-        accountReference:
-          - id: troy-hart-0
-            provider: jenkins.io/git-github-userid
-        email: thart@myriad.com
-        name: Troy Hart
-      message: |
-        ...
-      sha: fa957712d0520da1027d5373a857c4b471e2a247
-    - author:
-        accountReference:
-          - id: troy-hart-0
-            provider: jenkins.io/git-github-userid
-        email: thart@myriad.com
-        name: Troy Hart
-      branch: master
-      committer:
-        accountReference:
-          - id: troy-hart-0
-            provider: jenkins.io/git-github-userid
-        email: thart@myriad.com
-        name: Troy Hart
-      message: |
-        fix: foo
-      sha: 31362024b3940ade2c3008ce159bf71c68e1317a
+        turn kaniko logging to debug
+      sha: ed445c659cb3f6a76c67a72d5bb265b35ffc0e5c
   gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp5.git
   gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp5
   gitOwner: myriad-personal
   gitRepository: jx3-demoapp5
   name: 'jx3-demoapp5'
-  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.14
-  version: v0.0.14
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.15
+  version: v0.0.15
 status: {}
