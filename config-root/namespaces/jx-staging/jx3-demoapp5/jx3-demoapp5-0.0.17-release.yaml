@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-25T16:47:06Z"
+  creationTimestamp: "2020-11-25T17:27:40Z"
   deletionTimestamp: null
-  name: 'jx3-demoapp5-0.0.16'
+  name: 'jx3-demoapp5-0.0.17'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.16
-      sha: 2dccd8ecbd634d189bdfb46776c2bf19d36cc66f
+        release 0.0.17
+      sha: aaf18fdfb5088a671d98f1381221fefe5faaa2e7
     - author:
         accountReference:
           - id: troy-hart-0
@@ -40,13 +40,13 @@ spec:
         email: thart@myriad.com
         name: Troy Hart
       message: |
-        turn kaniko logging to trace
-      sha: e10e834a575b849d1e10617087f5568b59d76f8a
+        hacking
+      sha: 2294c93e6bb1ae8fb08a372bf8a6f41775f7196d
   gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp5.git
   gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp5
   gitOwner: myriad-personal
   gitRepository: jx3-demoapp5
   name: 'jx3-demoapp5'
-  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.16
-  version: v0.0.16
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.17
+  version: v0.0.17
 status: {}
