@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-11-25T23:42:56Z"
+  creationTimestamp: "2020-11-26T00:24:13Z"
   deletionTimestamp: null
-  name: 'jx3-demoapp5-0.0.26'
+  name: 'jx3-demoapp5-0.0.27'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.26
-      sha: a1c0f0fd75b579f9b25b8c6499ac2584fb904bc0
+        release 0.0.27
+      sha: 6931f8071378ef7639d2853d6348936a7016d2f8
     - author:
         accountReference:
           - id: troy-hart-0
@@ -40,13 +40,13 @@ spec:
         email: thart@myriad.com
         name: Troy Hart
       message: |
-        hacking
-      sha: 19f34579a508e8fbd73166084d5bcec81d9e64c6
+        ...
+      sha: 120667b92161b092ab7dd77430b796ce2ef30f38
   gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp5.git
   gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp5
   gitOwner: myriad-personal
   gitRepository: jx3-demoapp5
   name: 'jx3-demoapp5'
-  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.26
-  version: v0.0.26
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.27
+  version: v0.0.27
 status: {}
