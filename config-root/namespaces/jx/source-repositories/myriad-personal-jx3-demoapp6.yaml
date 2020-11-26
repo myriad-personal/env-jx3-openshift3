@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: myriad-personal
+    provider: github
+    repository: jx3-demoapp6
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: myriad-personal-jx3-demoapp6
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/myriad-personal/jx3-demoapp6.git
+  org: myriad-personal
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx3-demoapp6
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/myriad-personal/jx3-demoapp6
