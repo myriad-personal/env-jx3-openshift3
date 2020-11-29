@@ -52,8 +52,8 @@ fetch: init
 	helm repo add jx http://chartmuseum.jenkins-x.io
 
 	# generate the yaml from the charts in helmfile.yaml and moves them to the right directory tree (cluster or namespaces/foo)
-	jx gitops helmfile template $(HELMFILE_TEMPLATE_FLAGS) --args="--include-crds --values=jx-values.yaml --values=versionStream/src/fake-secrets.yaml.gotmpl --values=imagePullSecrets.yaml" --output-dir $(OUTPUT_DIR)
-
+	jx gitops helmfile template $(HELMFILE_TEMPLATE_FLAGS) --args="--values=jx-values.yaml --values=versionStream/src/fake-secrets.yaml.gotmpl --values=imagePullSecrets.yaml" --output-dir $(OUTPUT_DIR)
+	
 	# convert k8s Secrets => ExternalSecret resources using secret mapping + schemas
 	# see: https://github.com/jenkins-x/jx-secret#mappings
 	jx secret convert --source-dir $(OUTPUT_DIR)
@@ -175,6 +175,10 @@ write-completed:
 	echo completed > jx-boot-completed.txt
 	echo wrote completed file
 
+.PHONY: failed
+failed: write-completed
+	exit 1
+
 .PHONY: kubectl-apply
 kubectl-apply:
 	# NOTE be very careful about these 2 labels as getting them wrong can remove stuff in you cluster!
@@ -230,4 +234,4 @@ release: lint
 .PHONY: dev-ns
 dev-ns:
 	@echo changing to the jx namespace to verify
-	jx ns jx
+	jx ns jx --quiet
