@@ -73,7 +73,7 @@ releases:
   name: local-external-secrets
   namespace: jx
 - chart: dev/jx3-demoapp5
-  version: 0.0.30
+  version: 0.0.31
   name: jx3-demoapp5
   namespace: jx-staging
 templates: {}
