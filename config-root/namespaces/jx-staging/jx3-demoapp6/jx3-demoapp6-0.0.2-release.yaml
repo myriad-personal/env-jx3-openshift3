@@ -1,0 +1,52 @@
+# Source: jx3-demoapp6/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-02T22:26:48Z"
+  deletionTimestamp: null
+  name: 'jx3-demoapp6-0.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: added variables
+      sha: 355beef1066e02dd20260a366825797a45933da4
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: adding charts and .jx/variables.sh
+      sha: 9378398d823bddb20ee966c530641d774cffd416
+  gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp6.git
+  gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp6
+  gitOwner: myriad-personal
+  gitRepository: jx3-demoapp6
+  name: 'jx3-demoapp6'
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp6/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
