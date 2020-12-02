@@ -5,7 +5,7 @@ metadata:
   name: jx3-demoapp5-jx3-demoapp5
   labels:
     draft: draft-app
-    chart: "jx3-demoapp5-0.0.30"
+    chart: "jx3-demoapp5-0.0.31"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -24,11 +24,11 @@ spec:
       serviceAccountName: jx3-demoapp5-jx3-demoapp5
       containers:
         - name: jx3-demoapp5
-          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-demoapp5:0.0.30"
+          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-demoapp5:0.0.31"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.30
+              value: 0.0.31
           envFrom: null
           ports:
             - containerPort: 8080
