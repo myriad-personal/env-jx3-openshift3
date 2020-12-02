@@ -1,0 +1,52 @@
+# Source: jx3-demoapp5/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-02T19:55:47Z"
+  deletionTimestamp: null
+  name: 'jx3-demoapp5-0.0.31'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 0.0.31
+      sha: 6008081c8949c5861c1d932be377e4e933d2bbbc
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: add documentation
+      sha: ab49d2cbb78c0f3e0a0d45ebb6d1d51df08b169b
+  gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp5.git
+  gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp5
+  gitOwner: myriad-personal
+  gitRepository: jx3-demoapp5
+  name: 'jx3-demoapp5'
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.31
+  version: v0.0.31
+status: {}

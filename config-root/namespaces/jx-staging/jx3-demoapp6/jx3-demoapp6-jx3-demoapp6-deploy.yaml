@@ -1,11 +1,11 @@
-# Source: jx3-demoapp5/templates/deployment.yaml
+# Source: jx3-demoapp6/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jx3-demoapp5-jx3-demoapp5
+  name: jx3-demoapp6-jx3-demoapp6
   labels:
     draft: draft-app
-    chart: "jx3-demoapp5-0.0.31"
+    chart: "jx3-demoapp6-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -13,28 +13,28 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: jx3-demoapp5-jx3-demoapp5
+      app: jx3-demoapp6-jx3-demoapp6
   replicas: 1
   template:
     metadata:
       labels:
         draft: draft-app
-        app: jx3-demoapp5-jx3-demoapp5
+        app: jx3-demoapp6-jx3-demoapp6
     spec:
-      serviceAccountName: jx3-demoapp5-jx3-demoapp5
+      serviceAccountName: jx3-demoapp6-jx3-demoapp6
       containers:
-        - name: jx3-demoapp5
-          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-demoapp5:0.0.31"
+        - name: jx3-demoapp6
+          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-demoapp6:0.0.2"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
-              value: 0.0.31
+              value: 0.0.2
           envFrom: null
           ports:
             - containerPort: 8080
           livenessProbe:
             httpGet:
-              path: /actuator/health
+              path: /
               port: 8080
             initialDelaySeconds: 60
             periodSeconds: 10
@@ -42,7 +42,7 @@ spec:
             timeoutSeconds: 1
           readinessProbe:
             httpGet:
-              path: /actuator/health
+              path: /
               port: 8080
             periodSeconds: 10
             successThreshold: 1
@@ -56,3 +56,4 @@ spec:
               memory: 128Mi
       terminationGracePeriodSeconds:
       imagePullSecrets:
+        - name: "tekton-container-registry-auth"

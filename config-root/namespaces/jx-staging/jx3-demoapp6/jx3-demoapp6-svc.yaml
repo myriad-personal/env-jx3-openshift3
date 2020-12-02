@@ -1,10 +1,10 @@
-# Source: jx3-demoapp5/templates/service.yaml
+# Source: jx3-demoapp6/templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: jx3-demoapp5
+  name: jx3-demoapp6
   labels:
-    chart: "jx3-demoapp5-0.0.31"
+    chart: "jx3-demoapp6-0.0.2"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   annotations:
     fabric8.io/expose: "true"
@@ -18,4 +18,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: jx3-demoapp5-jx3-demoapp5
+    app: jx3-demoapp6-jx3-demoapp6
