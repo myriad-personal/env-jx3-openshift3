@@ -29,7 +29,6 @@ spec:
           env:
             - name: VERSION
               value: 0.0.28
-          envFrom: null
           ports:
             - containerPort: 8080
           livenessProbe:
@@ -55,5 +54,3 @@ spec:
               cpu: 200m
               memory: 128Mi
       terminationGracePeriodSeconds:
-      imagePullSecrets:
-        - name: "tekton-container-registry-auth"
