@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-03T00:16:33Z"
+  creationTimestamp: "2020-12-03T15:20:45Z"
   deletionTimestamp: null
-  name: 'jx3-demoapp6-0.0.3'
+  name: 'jx3-demoapp6-0.0.4'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -25,7 +25,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: added variables
-      sha: 9d6236c780f83851e503a0d3c0f95d03759f8203
+      sha: ad584ec97cd2a4cd849e2239fa8f362c35db63ed
     - author:
         accountReference:
           - id: troy-hart-0
@@ -40,13 +40,13 @@ spec:
         email: thart@myriad.com
         name: Troy Hart
       message: |
-        fix: added rest enpiont: /hola
-      sha: 9f45e8eac27d96d842796223902fa2d2c2f8abd6
+        fix: probePath to `/actuator/health`
+      sha: 8c316e85726d88bbb51ff9396b3d2d543d6f6d0b
   gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp6.git
   gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp6
   gitOwner: myriad-personal
   gitRepository: jx3-demoapp6
   name: 'jx3-demoapp6'
-  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp6/releases/tag/v0.0.3
-  version: v0.0.3
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp6/releases/tag/v0.0.4
+  version: v0.0.4
 status: {}
