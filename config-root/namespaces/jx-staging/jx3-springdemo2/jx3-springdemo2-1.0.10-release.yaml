@@ -1,0 +1,52 @@
+# Source: jx3-springdemo2/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-04T20:59:44Z"
+  deletionTimestamp: null
+  name: 'jx3-springdemo2-1.0.10'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 1.0.10
+      sha: d334c846e05e3041d1efdcbb18a89a3ac6e917bc
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: jar deployment
+      sha: 3c3313cfddcd7bdfb0fffe47492388f55535d638
+  gitCloneUrl: https://github.com/myriad-personal/jx3-springdemo2.git
+  gitHttpUrl: https://github.com/myriad-personal/jx3-springdemo2
+  gitOwner: myriad-personal
+  gitRepository: jx3-springdemo2
+  name: 'jx3-springdemo2'
+  releaseNotesURL: https://github.com/myriad-personal/jx3-springdemo2/releases/tag/v1.0.10
+  version: v1.0.10
+status: {}
