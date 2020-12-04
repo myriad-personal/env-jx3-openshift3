@@ -94,5 +94,9 @@ releases:
   version: 1.0.6
   name: jx3-demoapp4
   namespace: jx-staging
+- chart: dev/jx3-springdemo2
+  version: 1.0.10
+  name: jx3-springdemo2
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
