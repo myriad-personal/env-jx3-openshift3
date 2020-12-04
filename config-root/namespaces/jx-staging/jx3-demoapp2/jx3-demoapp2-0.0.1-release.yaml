@@ -1,0 +1,82 @@
+# Source: jx3-demoapp2/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-04T22:43:24Z"
+  deletionTimestamp: null
+  name: 'jx3-demoapp2-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        ...
+      sha: c46e6c84d56aa3cbd6a40794ea2b4c80238d6a96
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: noreply@github.com
+        name: GitHub
+      message: Update README.md
+      sha: cd79554846c5967436dde6048f03e5ae6d00761d
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: installed stalled and left these
+      sha: e9621e5bb68a3c6235453df64cc08022ac8392e4
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: kaniko flags to work with insecure registry
+      sha: 1ffd05b95b361a004053fab36229ed4fe83ed844
+  gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp2.git
+  gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp2
+  gitOwner: myriad-personal
+  gitRepository: jx3-demoapp2
+  name: 'jx3-demoapp2'
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp2/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
