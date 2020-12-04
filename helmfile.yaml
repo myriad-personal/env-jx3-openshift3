@@ -87,7 +87,7 @@ releases:
   name: jx3-demoapp6
   namespace: jx-production
 - chart: dev/jx3-demoapp1
-  version: 0.0.4
+  version: 0.0.5
   name: jx3-demoapp1
   namespace: jx-staging
 templates: {}
