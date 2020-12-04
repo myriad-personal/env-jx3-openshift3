@@ -1,0 +1,52 @@
+# Source: jx3-demoapp1/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-04T19:20:02Z"
+  deletionTimestamp: null
+  name: 'jx3-demoapp1-0.0.4'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        accountReference:
+          - id: jenkins-x-bot-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        release 0.0.4
+      sha: 8c3bb67c6efa945fda3348943f2e615aadebac6a
+    - author:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      branch: master
+      committer:
+        accountReference:
+          - id: troy-hart-0
+            provider: jenkins.io/git-github-userid
+        email: thart@myriad.com
+        name: Troy Hart
+      message: |
+        fix: kaniko flags to work with insecure registry
+      sha: fcbce858b1c5693651c967222320f5a4b832e27b
+  gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp1.git
+  gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp1
+  gitOwner: myriad-personal
+  gitRepository: jx3-demoapp1
+  name: 'jx3-demoapp1'
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp1/releases/tag/v0.0.4
+  version: v0.0.4
+status: {}
