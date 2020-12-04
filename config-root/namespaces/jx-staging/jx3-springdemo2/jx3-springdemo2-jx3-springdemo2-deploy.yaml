@@ -5,7 +5,7 @@ metadata:
   name: jx3-springdemo2-jx3-springdemo2
   labels:
     draft: draft-app
-    chart: "jx3-springdemo2-1.0.10"
+    chart: "jx3-springdemo2-1.0.11"
     gitops.jenkins-x.io/pipeline: 'namespaces'
   namespace: jx-staging
   annotations:
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: jx3-springdemo2
-          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-springdemo2:1.0.10"
+          image: "image-registry.openshift-image-registry.svc:5000/jx/jx3-springdemo2:1.0.11"
           imagePullPolicy: IfNotPresent
           env:
           envFrom: null
