@@ -95,7 +95,7 @@ releases:
   name: jx3-demoapp4
   namespace: jx-staging
 - chart: dev/jx3-springdemo2
-  version: 1.0.10
+  version: 1.0.11
   name: jx3-springdemo2
   namespace: jx-staging
 templates: {}
