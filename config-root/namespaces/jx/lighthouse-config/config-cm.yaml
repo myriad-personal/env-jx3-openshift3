@@ -11,6 +11,7 @@ data:
         myriad-personal/jx3-demoapp-py1: true
         myriad-personal/jx3-demoapp1: true
         myriad-personal/jx3-demoapp2: true
+        myriad-personal/jx3-demoapp3: true
         myriad-personal/jx3-demoapp4: true
         myriad-personal/jx3-demoapp5: true
         myriad-personal/jx3-demoapp6: true
@@ -31,6 +32,7 @@ data:
         myriad-personal/jx3-demoapp-py1: merge
         myriad-personal/jx3-demoapp1: merge
         myriad-personal/jx3-demoapp2: merge
+        myriad-personal/jx3-demoapp3: merge
         myriad-personal/jx3-demoapp4: merge
         myriad-personal/jx3-demoapp5: merge
         myriad-personal/jx3-demoapp6: merge
@@ -50,6 +52,7 @@ data:
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp2
+        - myriad-personal/jx3-demoapp3
         - myriad-personal/jx3-demoapp4
         - myriad-personal/jx3-demoapp5
         - myriad-personal/jx3-demoapp6
@@ -68,6 +71,7 @@ data:
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp2
+        - myriad-personal/jx3-demoapp3
         - myriad-personal/jx3-demoapp4
         - myriad-personal/jx3-demoapp5
         - myriad-personal/jx3-demoapp6
