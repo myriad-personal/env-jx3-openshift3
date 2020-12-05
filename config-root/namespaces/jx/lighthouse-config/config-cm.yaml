@@ -13,6 +13,33 @@ data:
         myriad-personal/jx3-demoapp5: true
     plank: {}
     pod_namespace: jx
+    postsubmits:
+      troyhart/blox-framework:
+      - agent: tekton-pipeline
+        branches:
+        - master
+        - main
+        labels:
+          aadpodidbinding: tekton-bot
+        name: release
+        pipeline_run_spec:
+          pipelineRef:
+            name: jx-meta-pipeline
+          serviceAccountName: tekton-bot
+    presubmits:
+      troyhart/blox-framework:
+      - agent: tekton-pipeline
+        always_run: true
+        context: pr-build
+        labels:
+          aadpodidbinding: tekton-bot
+        name: pr-build
+        pipeline_run_spec:
+          pipelineRef:
+            name: jx-meta-pipeline
+          serviceAccountName: tekton-bot
+        rerun_command: /test this
+        trigger: (?m)^/test( all| this),?(\s+|$)
     prowjob_namespace: jx
     push_gateway:
       serve_metrics: false
@@ -26,6 +53,7 @@ data:
         myriad-personal/jx3-demoapp-py1: merge
         myriad-personal/jx3-demoapp1: merge
         myriad-personal/jx3-demoapp5: merge
+        troyhart/blox-framework: merge
       queries:
       - labels:
         - approved
@@ -40,6 +68,7 @@ data:
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp5
+        - troyhart/blox-framework
       - labels:
         - updatebot
         missingLabels:
@@ -53,6 +82,7 @@ data:
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp5
+        - troyhart/blox-framework
       target_url: http://dashboard-jx.apps.os.swe-test.aws.myriad.com
 kind: ConfigMap
 metadata:
