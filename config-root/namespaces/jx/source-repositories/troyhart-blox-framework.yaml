@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: troyhart
+    provider: github
+    repository: blox-framework
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: troyhart-blox-framework
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/troyhart/blox-framework.git
+  org: troyhart
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: blox-framework
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/troyhart/blox-framework
