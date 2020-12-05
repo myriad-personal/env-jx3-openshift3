@@ -12,3 +12,8 @@ spec:
     - name: jx3-demoapp1
     - name: jx3-demoapp5
     scheduler: in-repo
+  - owner: troyhart
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: blox-framework
