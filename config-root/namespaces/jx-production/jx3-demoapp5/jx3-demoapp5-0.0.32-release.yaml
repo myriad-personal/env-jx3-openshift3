@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-12-02T19:55:47Z"
+  creationTimestamp: "2020-12-04T20:08:55Z"
   deletionTimestamp: null
-  name: 'jx3-demoapp5-0.0.31'
+  name: 'jx3-demoapp5-0.0.32'
   namespace: jx-production
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -24,8 +24,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        release 0.0.31
-      sha: 6008081c8949c5861c1d932be377e4e933d2bbbc
+        release 0.0.32
+      sha: 4bd2a4125e33ccccdb2a41e5dc6b2fee096c71b8
     - author:
         accountReference:
           - id: troy-hart-0
@@ -40,13 +40,13 @@ spec:
         email: thart@myriad.com
         name: Troy Hart
       message: |
-        fix: add documentation
-      sha: ab49d2cbb78c0f3e0a0d45ebb6d1d51df08b169b
+        fix: default path
+      sha: 7276fad327e3241d9350c57b1ff1253460546bdb
   gitCloneUrl: https://github.com/myriad-personal/jx3-demoapp5.git
   gitHttpUrl: https://github.com/myriad-personal/jx3-demoapp5
   gitOwner: myriad-personal
   gitRepository: jx3-demoapp5
   name: 'jx3-demoapp5'
-  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.31
-  version: v0.0.31
+  releaseNotesURL: https://github.com/myriad-personal/jx3-demoapp5/releases/tag/v0.0.32
+  version: v0.0.32
 status: {}
