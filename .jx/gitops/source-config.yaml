@@ -8,6 +8,7 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: bloxlet-auth
     - name: jx3-demoapp-py1
     - name: jx3-demoapp1
     - name: jx3-demoapp5
