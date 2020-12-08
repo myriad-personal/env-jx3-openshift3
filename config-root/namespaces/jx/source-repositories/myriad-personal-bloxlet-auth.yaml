@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: myriad-personal
+    provider: github
+    repository: bloxlet-auth
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: myriad-personal-bloxlet-auth
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/myriad-personal/bloxlet-auth.git
+  org: myriad-personal
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: bloxlet-auth
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/myriad-personal/bloxlet-auth

@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - myriad-personal/bloxlet-auth
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - myriad-personal/jx3-demoapp-py1
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -36,6 +40,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      myriad-personal/bloxlet-auth:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       myriad-personal/env-jx3-openshift3:
       - config-updater
       - approve
@@ -128,6 +148,9 @@ data:
     triggers:
     - repos:
       - myriad-personal/env-jx3-openshift3
+      trusted_org: todo
+    - repos:
+      - myriad-personal/bloxlet-auth
       trusted_org: todo
     - repos:
       - myriad-personal/jx3-demoapp-py1
