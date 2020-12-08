@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        myriad-personal/bloxlet-auth: true
         myriad-personal/env-jx3-openshift3: true
         myriad-personal/jx3-demoapp-py1: true
         myriad-personal/jx3-demoapp1: true
@@ -49,6 +50,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        myriad-personal/bloxlet-auth: merge
         myriad-personal/env-jx3-openshift3: merge
         myriad-personal/jx3-demoapp-py1: merge
         myriad-personal/jx3-demoapp1: merge
@@ -65,6 +67,7 @@ data:
         - needs-rebase
         repos:
         - myriad-personal/env-jx3-openshift3
+        - myriad-personal/bloxlet-auth
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp5
@@ -79,6 +82,7 @@ data:
         - needs-rebase
         repos:
         - myriad-personal/env-jx3-openshift3
+        - myriad-personal/bloxlet-auth
         - myriad-personal/jx3-demoapp-py1
         - myriad-personal/jx3-demoapp1
         - myriad-personal/jx3-demoapp5
