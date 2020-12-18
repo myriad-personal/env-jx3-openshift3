@@ -1,8 +1,20 @@
 filepath: ""
 helmfiles:
 - path: helmfiles/jx/helmfile.yaml
+  environment: {}
 - path: helmfiles/jx-production/helmfile.yaml
+  environment: {}
 - path: helmfiles/jx-staging/helmfile.yaml
+  environment: {}
 - path: helmfiles/tekton-pipelines/helmfile.yaml
+  environment: {}
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
+releases:
+- chart: dev/jx3-demoapp5
+  version: 0.0.33
+  name: jx3-demoapp5
+  namespace: jx-staging
 templates: {}
-renderedvalues: {}
+missingFileHandler: ""
