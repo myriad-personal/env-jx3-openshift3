@@ -1,0 +1,22 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
+releases:
+- chart: dev/jx3-demoapp5
+  version: 0.0.32
+  name: jx3-demoapp5
+  values:
+  - jx-values.yaml
+- chart: dev/jx3-demoapp1
+  version: 0.0.5
+  name: jx3-demoapp1
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}
