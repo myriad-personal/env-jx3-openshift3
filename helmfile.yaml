@@ -16,5 +16,9 @@ releases:
   version: 0.0.33
   name: jx3-demoapp5
   namespace: jx-staging
+- chart: dev/jx3-demoapp1
+  version: 0.0.6
+  name: jx3-demoapp1
+  namespace: jx-staging
 templates: {}
 missingFileHandler: ""
