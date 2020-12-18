@@ -13,7 +13,7 @@ repositories:
   url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
 releases:
 - chart: dev/jx3-demoapp5
-  version: 0.0.33
+  version: 0.0.34
   name: jx3-demoapp5
   namespace: jx-staging
 templates: {}
