@@ -8,15 +8,5 @@ repositories:
 - name: dev
   url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
 releases:
-- chart: dev/jx3-demoapp5
-  version: 0.0.34
-  name: jx3-demoapp5
-  values:
-  - jx-values.yaml
-- chart: dev/jx3-demoapp1
-  version: 0.0.6
-  name: jx3-demoapp1
-  values:
-  - jx-values.yaml
 templates: {}
 renderedvalues: {}
